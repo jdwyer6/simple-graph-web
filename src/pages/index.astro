@@ -9,7 +9,7 @@ import Layout from '../layouts/Layout.astro';
 			<div class="max-w-3xl mx-auto text-center">
 				<h1 class="text-5xl lg:text-6xl font-bold mb-6">
 					Track your daily progress,<br/>
-					achieve your goals
+					with <span class="text-primary">Simple </span><span class="text-secondary">Graph</span>
 				</h1>
 				<p class="text-xl text-gray-600 mb-8">
 					With Simple Graph, you can easily visualize and track your daily habits,
@@ -19,6 +19,45 @@ import Layout from '../layouts/Layout.astro';
 					Download on the App Store
 				</a>
 			</div>
+		</div>
+		<div class="flex flex-row justify-around items-center">
+			<div class="relative w-1/6">
+				<div class="relative bg-white p-4 rounded-xl shadow-2xl">
+					<img src="/images/homepage.jpg" alt="Hero Image" class="w-full h-full object-cover rounded-lg" />
+				</div>
+			</div>
+			<div class="relative w-1/6">
+				<div class="relative bg-white p-4 rounded-xl shadow-2xl">
+					<img src="/images/graph_edit.jpg" alt="Hero Image" class="w-full h-full object-cover rounded-lg" />
+				</div>
+			</div>
+			<div class="relative w-1/6">
+				<div class="relative bg-white p-4 rounded-xl shadow-2xl">
+					<img src="/images/new_data_point.jpg" alt="Hero Image" class="w-full h-full object-cover rounded-lg" />
+				</div>
+			</div>
+		</div>
+		<div class="absolute top-0 left-0 w-full h-full -z-10">
+			<svg class="absolute w-full h-full opacity-10" viewBox="0 0 1000 1000">
+				<!-- Main trend line -->
+				<path 
+					d="M0,800 C300,700 400,400 500,500 C600,600 700,200 1000,100" 
+					class="stroke-primary stroke-[3]"
+					fill="none"
+				/>
+				
+				<!-- Data points -->
+				<circle cx="200" cy="750" r="6" class="fill-primary"/>
+				<circle cx="500" cy="500" r="6" class="fill-primary"/>
+				<circle cx="800" cy="250" r="6" class="fill-secondary"/>
+		
+				<!-- Secondary trend line -->
+				<path 
+					d="M0,600 C200,500 500,700 700,300 C800,200 900,100 1000,200" 
+					class="stroke-secondary stroke-[2] opacity-50"
+					fill="none"
+				/>
+			</svg>
 		</div>
 	</section>
 
