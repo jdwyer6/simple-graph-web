@@ -70,8 +70,9 @@ import Layout from '../layouts/Layout.astro';
 					<div class="relative">
 						<div class="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-3xl transform rotate-6"></div>
 						<div class="relative bg-white p-4 rounded-3xl shadow-2xl">
-							<!-- Replace with your app screenshot -->
-							<div class="bg-gray-200 aspect-[9/16] rounded-2xl"></div>
+							<div class="bg-gray-200 aspect-[9/16] rounded-2xl">
+								<video autoplay class="w-full h-auto"><source src="./images/video_demo.mp4" type="video/mp4">Your browser does not support the video tag.</video>	
+							</div>
 						</div>
 					</div>
 				</div>
@@ -98,27 +99,28 @@ import Layout from '../layouts/Layout.astro';
 
 						<div class="flex gap-4">
 							<div class="flex-shrink-0 w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center">
-								<svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-								</svg>
+							  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 3v1.5m0 15V21m6-18v1.5m0 15V21M4.5 9.75h15m-15 4.5h15" />
+							  </svg>
 							</div>
 							<div>
-								<h3 class="text-xl font-semibold mb-2">Daily Reminders</h3>
-								<p class="text-gray-600">Never miss a day with customizable reminders that keep you on track.</p>
+							  <h3 class="text-xl font-semibold mb-2">Customizable</h3>
+							  <p class="text-gray-600">Tailor your graphs to fit any habit, metric, or goal—flexible enough for anything you track.</p>
 							</div>
-						</div>
-
-						<div class="flex gap-4">
+						  </div>
+						  
+						  <div class="flex gap-4">
 							<div class="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
-								<svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-								</svg>
+							  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+							  </svg>
 							</div>
 							<div>
-								<h3 class="text-xl font-semibold mb-2">Achievement Milestones</h3>
-								<p class="text-gray-600">Celebrate your progress with achievement badges and milestones.</p>
+							  <h3 class="text-xl font-semibold mb-2">One-Tap Data Entry</h3>
+							  <p class="text-gray-600">Log your progress instantly with a single tap—no complex forms or distractions.</p>
 							</div>
-						</div>
+						  </div>
+						  
 					</div>
 				</div>
 			</div>
@@ -181,4 +183,23 @@ import Layout from '../layouts/Layout.astro';
 			</div>
 		</div>
 	</section>
+
+	<!-- Footer Section -->
+	<footer class="bg-gray-100 py-8">
+		<div class="container mx-auto px-4">
+			<div class="flex flex-col md:flex-row justify-between items-center">
+				<div class="mb-4 md:mb-0">
+					<p class="text-gray-600">© {new Date().getFullYear()} Simple Graph. All rights reserved.</p>
+				</div>
+				<div class="flex items-center space-x-6">
+					<a href="mailto:whospayingformike@gmail.com" class="text-gray-600 hover:text-primary transition-colors">
+						<strong>Support:</strong> whospayingformike@gmail.com
+					</a>
+					<a href="/privacy-policy" class="text-gray-600 hover:text-primary transition-colors">
+						Privacy Policy
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
 </Layout>
